@@ -15,3 +15,8 @@ BERT [(Devlin et al, 2019)](https://arxiv.org/abs/1810.04805) (Bidirectional Enc
 > "BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
 
 By having this bidirectionality, BERT can learn words by its context. Using that intuitive, Double-Stack BERT tried to learn sentences by its context in a text by turning the sentences into tokens.
+
+## What do you use Double-Stack BERT for?
+You use it for document embedding! From conducted experiments*, it has shown that adding the document vector that contains inter-sentence relation improves its performance. It's especially great for longer documents and for documents that has its own narative (ex. book synopsis, news article, etc)
+
+*Thesis and experiment results are available soon
